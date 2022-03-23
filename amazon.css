@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body {
@@ -9,31 +9,32 @@ body {
     font-family: "Amazon Ember", Arial, sans-serif;
 }
 
-.navbar {
+.navbar-my {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100px;
 }
 
-.nav-belt {
+.nav-belt-my {
     display: flex;
-    flex-direction: row;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 60px;
     position: fixed;
     background-color: #131921;
+    z-index: 2;
 }
 
-.logo {
+.logo-my {
     height: 100%;
-    width: 150px;
+    min-width: 150px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-.amazon-logo {
-    width: 80%;
+.amazon-logo-my {
+    width: 120px;
     height: 80%;
     margin-top: 13px;
     margin-left: 6px;
@@ -41,22 +42,21 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
 }
 
-.nav-main {
+.nav-main-my {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 40px;
     position: absolute;
     top: 60px;
-    z-index: -1;
     background-color: #232f3e;
 }
 
-.address {
+.address-my {
     color: white;
     width: 155px;
     height: 100%;
@@ -65,25 +65,25 @@ a {
     font-size: 13px;
 }
 
-.loc-log {
+.loc-log-my {
     padding-top: 25px;
     margin-right: 2px;
 }
 
-.location-des {
+.location-des-my {
     padding-top: 20px;
 }
 
-.quick-search {
+.quick-search-my {
     height: 40px;
-    width: 55%;
+    width: 70%;
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
     flex-flow: row nowrap;
 }
 
-.form-search {
+.form-search-my {
     width: 100%;
     height: 100%;
     display: flex;
@@ -98,38 +98,22 @@ a {
     border-bottom-left-radius: 10%;
 }
 
-.input-text {
+.input-text-my {
     height: 100%;
-    width: 75%;
+    width: 94%;
 }
 
-.input-text input {
+.input-text-my input {
     height: 100%;
     width: 100%;
     font-size: 15px;
 }
 
-.nav-search {
+.nav-search-my {
     display: inline-block;
 }
 
-
-/* #search-icon {
-    height: 40px;
-    width: 40px;
-    background-image: url("https://i.ibb.co/YpZZcwv/search-512.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px 30px, contain;
-    border-top-right-radius: 10%;
-    z-index: 2;
-    border-top-right-radius: 10%;
-} */
-
-
-/* It as cover*/
-
-.search-submit {
+.search-submit-my {
     width: 50px;
     height: 102%;
     background-color: #febd69;
@@ -138,3 +122,99 @@ a {
     cursor: pointer;
     padding: 6px;
 }
+
+.region-my {
+    min-width: 50px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dropdown-region-lan-menu-my {
+    display: none;
+    background-color: white;
+    height: 450px;
+    /* border: 5px solid red; */
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 12px;
+    /* overflow: scroll; */
+}
+
+#in-in {
+    position: relative !important;
+    top: 2px !important;
+    left: -9px !important;
+}
+
+.dropdown-region-lan-menu-my input {
+    margin: 5px;
+}
+
+.dropdown-region-lan-menu-my label:hover {
+    text-shadow: 5px 5px 5px gold;
+}
+
+.region-my:hover .dropdown-region-lan-menu-my {
+    display: block;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 15px;
+    width: 15px;
+}
+
+.change-region-my {
+    margin: 10px;
+    padding: 10px;
+}
+
+.Accounts-my {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.order-returns-my {
+    min-width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.cart-my {
+    min-width: 70px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("https://i.ibb.co/xSsVnh2/cart.png");
+    background-size: 72px 90px, contain;
+}
+
+.number-of-items-my {
+    margin-left: 20px;
+    color: orange;
+    margin-top: 6px;
+}
+
+.carousel-inner {}
