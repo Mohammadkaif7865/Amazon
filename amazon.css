@@ -7,6 +7,7 @@
 body {
     color: #0F1111;
     font-family: "Amazon Ember", Arial, sans-serif;
+    background-color: rgb(207, 210, 213);
 }
 
 .navbar-my {
@@ -41,7 +42,7 @@ body {
     padding: 5px;
 }
 
-a {
+.navbar-my a {
     text-decoration: none !important;
     color: white !important;
 }

@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <!-- Owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="node_modules/flag-icons-svg/css/flag-icons.css">
     <link rel="stylesheet" href="amazon.css">
@@ -16,7 +22,37 @@
     <title>Amazon</title>
 </head>
 <style>
-
+    #display-2 {
+        margin: 10px;
+        background-color: white;
+    }
+    
+    #display-2 .item p {
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .owl-item .item {
+        height: auto;
+    }
+    
+    .owl-carousel .owl-stage {
+        display: flex;
+    }
+    
+    .owl-carousel .owl-item img {
+        width: auto;
+        margin: auto;
+    }
+    
+    #display-1 {
+        position: relative;
+        top: -150px;
+        left: 10px;
+        background-color: white;
+    }
 </style>
 
 <body>
@@ -231,13 +267,169 @@
 
             <!-- Left and right controls -- Never give -ve z index to the element which you want to give anchor tag  -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" style="position: absolute; top: 80px; left: 40px;"></span>
+                <span class="glyphicon glyphicon-chevron-left" style="position: absolute; top: 20%; left: 40px;"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" style="position: absolute; top: 80px; right: 40px;"></span>
+                <span class="glyphicon glyphicon-chevron-right" style="position: absolute; top: 20%; right: 40px;"></span>
                 <span class="sr-only">Next</span>
             </a>
+        </div>
+        <div class="owl-carousel owl-theme" id="display-1">
+            <div class="item">
+                <h4>Keep shopping for</h4>
+            </div>
+        </div>
+        <div class="display-panel-1" style="background-color: white; margin: 10px;  position: relative;
+        top: -150px;">
+            <div>
+                <h1 style="padding: 10px; border-bottom: 2px solid rgb(189, 182, 182);">Today's Deals</h1>
+            </div>
+            <div class="owl-carousel owl-theme" id="display-2">
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41A-ay1ftrL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>403 - <sup>₹</sup>10,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41iHN9Y07cS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>9,900 - <sup>₹</sup>35,990
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31FeKzJzVOS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>9,490 - <sup>₹</sup>2,10,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/619OOgbDBpS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>403 - <sup>₹</sup>3,847
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31FeKzJzVOS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>22,403 - <sup>₹</sup>44,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31vTfGd8kaL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,003 - <sup>₹</sup>4,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/512SMIvhtPL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>339 - <sup>₹</sup>24,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/51Q1tNCJgkS._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>539 - <sup>₹</sup>24,077
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/31RK2ukll1L._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,403 - <sup>₹</sup>9,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41riaxFTrIL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>1,00,403 - <sup>₹</sup>1,99,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41u1b7nvPWL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>603 - <sup>₹</sup>1,077
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/81sy7mdH0mL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>303 - <sup>₹</sup>1,877
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item">
+                        <img src="https://m.media-amazon.com/images/I/41oUHP4YOiL._AC_SY200_.jpg" alt="shoes">
+                        <p>
+                            <sup>₹</sup>499 - <sup>₹</sup>3,877
+                        </p>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                dots: false,
+                navText: ["<div class='glyphicon glyphicon-chevron-left' style='position: absolute; top: 30%; font-size:30px; left: 20px;'></div>", "<div class='glyphicon glyphicon-chevron-right'  style='position: absolute; top: 30%; font-size:30px; right: 20px;'></div>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium nisi ducimus qui totam iusto sunt ut, voluptas odit porro velit, illum autem accusamus laboriosam quibusdam officia rem aliquam eligendi. Officia libero nemo maxime debitis rem
+            ab aliquid, vel dolores consequatur, placeat ipsam eos explicabo tempore neque! Animi illum, quis eum nam itaque facere nulla velit aliquid est cumque iure, provident quam debitis, repellat placeat magnam perferendis mollitia quo molestias
+            commodi. Corporis rem eos est officiis dolorum asperiores quaerat vitae. Reprehenderit, temporibus. Pariatur sit nam dolores perferendis! Eaque cum minima voluptas corporis incidunt sunt consequuntur esse magni fugiat voluptatibus necessitatibus
+            ducimus, commodi sit libero unde impedit amet consequatur est suscipit recusandae? Expedita illo dolore voluptates dignissimos, ab ipsam facilis corrupti culpa commodi a minima reiciendis voluptas ullam? In veniam nemo quibusdam adipisci perferendis,
+            dignissimos officia magni excepturi rerum illum laudantium sapiente nam error voluptatem, molestias nesciunt voluptates eos quia ut cumque cupiditate quisquam, delectus deleniti nihil! Exercitationem quas cumque iure molestiae hic suscipit
+            voluptatum iste maiores, possimus, est odit eveniet tempore reiciendis repudiandae placeat magnam laborum aperiam, numquam illo quaerat veniam. Odio natus minima, dolore ducimus quis aut quasi sequi sunt eveniet ratione, quia eius deserunt
+            quae nam reiciendis aperiam ullam rem. Harum, quam nihil quis natus ab pariatur fugiat quas quasi sit sunt hic impedit deleniti rem exercitationem dolorem id qui voluptatem minus. Id quo similique vero, fugiat nihil dolor mollitia magnam ducimus
+            ea officia amet dolorem veritatis doloremque recusandae distinctio necessitatibus tempore maxime, numquam perspiciatis nam. Numquam, nemo! Possimus dicta quod minima maiores, ex perspiciatis consequuntur dolore fugiat ipsum eos praesentium
+            numquam, repudiandae commodi mollitia corrupti sequi omnis facilis ipsa, at fugit sit quas nihil. Earum in cumque officia? Reprehenderit omnis maiores fuga magnam. Exercitationem eum quidem eius commodi, consectetur accusantium enim unde,
+            odit dignissimos delectus molestias sequi ad non doloribus ex magnam nemo culpa rem hic harum! Explicabo cumque earum inventore dolorem. Amet, consequuntur ab itaque veniam aut optio unde expedita asperiores delectus maxime non, ipsum distinctio
+            at ratione, suscipit debitis consequatur sapiente! Quibusdam incidunt perspiciatis accusamus deleniti, non architecto accusantium perferendis id error tenetur est quod dolore nulla iste neque libero dolores. Dolorem nemo assumenda culpa cum
+            ut, magni consectetur libero doloremque deserunt odio modi tempora sit quidem dicta itaque? Debitis aperiam libero mollitia in labore, eos modi expedita autem ipsam beatae officiis quam aliquid officia ipsa odit voluptas nesciunt recusandae
+            adipisci dolores non nisi dolorem! Quo deserunt explicabo inventore blanditiis cumque veritatis quam quidem aut provident harum voluptas eos voluptatem saepe neque est, iste, possimus ipsa, culpa itaque veniam totam dolore! Tempora officiis
+            repellat doloribus veniam blanditiis sint architecto quia. Adipisci excepturi consequatur perspiciatis reiciendis perferendis, numquam repellendus! Impedit corrupti veritatis mollitia dolores et fugiat?
         </div>
     </main>
 
